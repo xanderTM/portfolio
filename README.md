@@ -1,6 +1,6 @@
 # Portfolio Xander Meyen
 
-Een persoonlijke portfolio website gebouwd met HTML en CSS voor het vak Webtechnologie aan Thomas More.
+Een persoonlijke portfolio website gebouwd met HTML en CSS voor het vak Websites aan Thomas More.
 
 ## 📋 Over dit project
 
