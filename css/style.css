@@ -185,3 +185,130 @@ h3 {
         padding: 40px 20px;
     }
 }
+
+.references {
+    padding: 80px 80px;
+    background-color: white;
+    text-align: center;
+}
+
+.references h2 {
+    font-size: 36px;
+    margin-bottom: 60px;
+    color: var(--primary);
+}
+
+.reference-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.reference-card {
+    background-color: var(--background);
+    padding: 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--primary);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 5px solid var(--accent);
+}
+
+.reference-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.reference-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--primary);
+}
+
+.reference-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .references {
+        padding: 40px 20px;
+    }
+
+    .reference-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* CV PAGE */
+.cv-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 80px;
+    text-align: center;
+}
+
+.cv-header {
+    margin-bottom: 40px;
+}
+
+.cv-header h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.cv-image {
+    max-width: 100%;
+    height: auto;
+    margin: 40px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.cv-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.cv-button {
+    display: inline-block;
+    background-color: var(--accent);
+    color: white;
+    padding: 15px 35px;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cv-button:hover {
+    background-color: #5a9fc4;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .cv-container {
+        padding: 40px 20px;
+    }
+
+    .cv-header h1 {
+        font-size: 28px;
+    }
+
+    .cv-buttons {
+        flex-direction: column;
+    }
+
+    .cv-button {
+        width: 100%;
+        text-align: center;
+    }
+}
