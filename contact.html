@@ -12,15 +12,62 @@
 </head>
 
 <body>
-     <nav id="main-navigation">
+   <nav id="main-navigation">
+        <div class="logo">Xander Meyen</div>
         <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="cv.html">CV</a>
-            <a href="contact.html">Contact</a>
             <a href="hobby.html">Hobby </a>
             <a href="ervaring.html">Ervaring</a>
+            <a href="contact.html">Contact</a>
         </div>
     </nav>
+
+    <section class="content-section">
+        <h1>Contact</h1>
+        
+        <div class="contact-intro">
+            <p>Hoe kan je mij bereiken</p>
+        </div>
+
+        <div class="contact-buttons">
+            <a href="mailto:xander.meyen@gmail.com" class="contact-btn mail-btn">
+                <span>📧</span> Mail
+            </a>
+            <a href="https://linkedin.com/in/xander-meyen-683845220" target="_blank" class="contact-btn linkedin-btn">
+                <span>💼</span> LinkedIn
+            </a>
+        </div>
+
+        <div class="contact-form-section">
+            <h2>Of stuur me een bericht</h2>
+            
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="naam">Naam</label>
+                    <input type="text" id="naam" name="naam" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mailadres</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="onderwerp">Onderwerp</label>
+                    <input type="text" id="onderwerp" name="onderwerp" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="bericht">Bericht</label>
+                    <textarea id="bericht" name="bericht" rows="6" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">Verzenden</button>
+            </form>
+        </div>
+    </section>
+ 
 </body>
 
 </html>
