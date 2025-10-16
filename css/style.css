@@ -324,6 +324,11 @@ h3 {
     margin-right: auto;
 }
 
+.content-section h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
 .hobby-category {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -351,6 +356,10 @@ h3 {
     color: var(--primary);
 }
 
+.hobby-content p + p {
+    margin-top: 30px;  
+}
+
 .hobby-image {
     display: flex;
     justify-content: center;
@@ -363,6 +372,32 @@ h3 {
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fields-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    margin-top: 20px;
+}
+
+.fields-table thead {
+    background-color: var(--accent);
+    color: white;
+}
+
+.fields-table th,
+.fields-table td {
+    padding: 12px 20px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.fields-table tbody tr:hover {
+    background-color: rgba(109, 178, 214, 0.1);
 }
 
 .interests-grid {
