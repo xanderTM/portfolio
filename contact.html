@@ -8,67 +8,211 @@
     <meta name="author" content="Xander Meyen">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Xander Meyen</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
 <body>
-   <nav id="main-navigation">
-        <div class="logo">Xander Meyen</div>
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="cv.html">CV</a>
-            <a href="hobby.html">Hobby </a>
-            <a href="ervaring.html">Ervaring</a>
-            <a href="contact.html">Contact</a>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand fw-bold" href="index.html">Xander Meyen</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cv.html">CV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hobby.html">Hobby</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ervaring.html">Ervaring</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <section class="content-section">
-        <h1>Contact</h1>
-        
-        <div class="contact-intro">
-            <p>Hoe kan je mij bereiken</p>
-        </div>
-
-        <div class="contact-buttons">
-            <a href="mailto:xander.meyen@gmail.com" class="contact-btn mail-btn">
-                <span>📧</span> Mail
-            </a>
-            <a href="https://linkedin.com/in/xander-meyen-683845220" target="_blank" class="contact-btn linkedin-btn">
-                <span>💼</span> LinkedIn
-            </a>
-        </div>
-
-        <div class="contact-form-section">
-            <h2>Of stuur me een bericht</h2>
+    <!-- CONTACT SECTION -->
+    <section class="contact-section py-5">
+        <div class="container">
+            <h1 class="text-center mb-3 fw-bold">Contact</h1>
             
-            <form class="contact-form" id="contactForm">
-                <div class="form-group">
-                    <label for="naam">Naam</label>
-                    <input type="text" id="naam" name="naam" required>
-                </div>
+            <div class="text-center mb-5">
+                <p class="lead text-muted">Hoe kan je mij bereiken?</p>
+            </div>
 
-                <div class="form-group">
-                    <label for="email">E-mailadres</label>
-                    <input type="email" id="email" name="email" required>
+            <div class="row mb-5">
+                <div class="col-md-6 mx-auto">
+                    <div class="d-flex gap-3 flex-wrap justify-content-center mb-5">
+                        <a href="mailto:xander.meyen@gmail.com" class="btn btn-accent btn-lg">
+                            📧 Mail
+                        </a>
+                        <a href="https://linkedin.com/in/xander-meyen-683845220" target="_blank" class="btn btn-outline-accent btn-lg">
+                            💼 LinkedIn
+                        </a>
+                    </div>
                 </div>
+            </div>
 
-                <div class="form-group">
-                    <label for="onderwerp">Onderwerp</label>
-                    <input type="text" id="onderwerp" name="onderwerp" required>
+            <!-- CONTACT FORM -->
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="mb-4 fw-bold">Of stuur me een bericht</h2>
+                    
+                    <form action="https://tm-statweb.be/forms.php" method="POST" class="contact-form" novalidate>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="naam" class="form-label fw-bold">Naam *</label>
+                                <input type="text" class="form-control" id="naam" name="naam" required>
+                                <div class="invalid-feedback">
+                                    Voer alstublieft je naam in.
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label for="voornaam" class="form-label fw-bold">Voornaam *</label>
+                                <input type="text" class="form-control" id="voornaam" name="voornaam" required>
+                                <div class="invalid-feedback">
+                                    Voer alstublieft je voornaam in.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label fw-bold">E-mailadres *</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                                <div class="invalid-feedback">
+                                    Voer alstublieft een geldig e-mailadres in.
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label for="telefoon" class="form-label fw-bold">Telefoon</label>
+                                <input type="tel" class="form-control" id="telefoon" name="telefoon">
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="studierichting" class="form-label fw-bold">Studierichting</label>
+                            <input type="text" class="form-control" id="studierichting" name="studierichting">
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="adres" class="form-label fw-bold">Adres</label>
+                                <input type="text" class="form-control" id="adres" name="adres">
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label for="woonplaats" class="form-label fw-bold">Woonplaats</label>
+                                <input type="text" class="form-control" id="woonplaats" name="woonplaats">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="land" class="form-label fw-bold">Land</label>
+                                <input type="text" class="form-control" id="land" name="land">
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label for="interesse" class="form-label fw-bold">Interesse in skills</label>
+                                <select class="form-select" id="interesse" name="interesse">
+                                    <option value="">Selecteer een skill...</option>
+                                    <option value="html-css">HTML & CSS</option>
+                                    <option value="javascript">JavaScript</option>
+                                    <option value="csharp">C#</option>
+                                    <option value="cpp">C++</option>
+                                    <option value="sql">SQL</option>
+                                    <option value="python">Python</option>
+                                    <option value="gamedev">Game Development</option>
+                                    <option value="webdev">Web Development</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="linkedin" class="form-label fw-bold">LinkedIn</label>
+                                <input type="url" class="form-control" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/...">
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label for="discord" class="form-label fw-bold">Discord</label>
+                                <input type="text" class="form-control" id="discord" name="discord" placeholder="Gebruikersnaam#1234">
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="bericht" class="form-label fw-bold">Vraag / Bericht *</label>
+                            <textarea class="form-control" id="bericht" name="bericht" rows="6" required></textarea>
+                            <div class="invalid-feedback">
+                                Voer alstublieft je bericht in.
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-accent btn-lg w-100">Verzenden</button>
+                    </form>
                 </div>
-
-                <div class="form-group">
-                    <label for="bericht">Bericht</label>
-                    <textarea id="bericht" name="bericht" rows="6" required></textarea>
-                </div>
-
-                <button type="submit" class="submit-button">Verzenden</button>
-            </form>
+            </div>
         </div>
     </section>
- 
+
+    <!-- FOOTER -->
+    <footer class="footer-section bg-dark text-light py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h5 class="mb-3">Xander Meyen</h5>
+                    <p>&copy; 2025 Xander Meyen. Alle rechten voorbehouden.</p>
+                </div>
+                <div class="col-md-6">
+                    <h5 class="mb-3">Volg mij</h5>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/xander-meyen-683845220" target="_blank" class="text-light me-3">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="mailto:xander.meyen@gmail.com" class="text-light">
+                            <i class="fas fa-envelope"></i> Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Form Validation -->
+    <script>
+        const forms = document.querySelectorAll('.contact-form');
+        
+        Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            }, false);
+        });
+    </script>
 </body>
 
 </html>
