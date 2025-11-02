@@ -198,21 +198,9 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- Form Validation -->
-    <script>
-        const forms = document.querySelectorAll('.contact-form');
-        
-        Array.from(forms).forEach(form => {
-            form.addEventListener('submit', event => {
-                if (!form.checkValidity()) {
-                    event.preventDefault();
-                    event.stopPropagation();
-                }
-                form.classList.add('was-validated');
-            }, false);
-        });
-    </script>
+
+    <!-- Custom Scripts -->
+    <script src="js/form-validation.js"></script>
 </body>
 
 </html>

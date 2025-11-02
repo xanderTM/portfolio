@@ -8,208 +8,279 @@
     <meta name="author" content="Xander Meyen">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ervaring - Xander Meyen</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
 <body>
-     <nav id="main-navigation">
-        <div class="logo">Xander Meyen</div>
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="cv.html">CV</a>
-            <a href="hobby.html">Hobby </a>
-            <a href="ervaring.html">Ervaring</a>
-            <a href="contact.html">Contact</a>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand fw-bold" href="index.html">Xander Meyen</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cv.html">CV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hobby.html">Hobby</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="ervaring.html">Ervaring</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
- <section class="content-section">
-        <h1>Ervaring & Projecten</h1>
+    <!-- ERVARING SECTION -->
+    <section class="ervaring-section py-5">
+        <div class="container">
+            <h1 class="text-center mb-5 fw-bold">Ervaring & Projecten</h1>
 
-        <!-- Intro -->
-        <div class="ervaring-intro">
-            <p>Tijdens mijn studie programmeren heb ik ervaring opgebouwd met diverse programmeertalen en technologieën, waaronder C++, OpenGL, SDL, JavaScript, C#, HTML, CSS en SQL. Deze kennis stel ik in de praktijk in voor het ontwikkelen van gebruiksvriendelijke applicaties en websites, waarbij ik technische uitdagingen graag creatief en efficiënt aanpak.</p>
-        </div>
-
-        <!-- Projecten -->
-        <div class="projects-section">
-            <h2>Projecten</h2>
-            
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="img/Project1Screen.jpg" alt="Tower Defense Game screenshot">
-                </div>
-                <div class="project-info">
-                    <h3>Tower Defense Game</h3>
-                    <p class="project-type">GamePlayScripting Project</p>
-                    <p>Een strategische, wave-based tower defense game met meerdere vijandtypen, upgrade-mechanieken, bossfights en een gebruiksvriendelijke GUI met een health indicator voor de toren. In dit project heb ik de kernsystemen zoals vijandlogica, gameplay, animaties en upgrades volledig geïmplementeerd.</p>
-                    <a href="https://github.com/xandermeyen/DAE-Tower_Defence/releases/tag/v1.2.0" class="project-link" target="_blank">Bekijk op GitHub →</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Skills -->
-        <div class="skills-section">
-            <h2>Vaardigheden</h2>
-            
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Programmeertalen</h3>
-                    <ul>
-                        <li>C++</li>
-                        <li>C#</li>
-                        <li>JavaScript</li>
-                        <li>HTML & CSS</li>
-                        <li>SQL</li>
-                    </ul>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Game Development</h3>
-                    <ul>
-                        <li>OpenGL</li>
-                        <li>SDL</li>
-                        <li>Game Design</li>
-                        <li>Gameplay Systems</li>
-                        <li>GUI Development</li>
-                    </ul>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Overige Skills</h3>
-                    <ul>
-                        <li>Web Development</li>
-                        <li>Database Design</li>
-                        <li>Problem Solving</li>
-                        <li>Team Collaboration</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-     <!-- Werkervaring -->
-        <div class="timeline-section">
-            <h2>Werkervaring</h2>
-            
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Scare Actor</h3>
-                        <p class="timeline-date">2024 - Heden</p>
-                        <p>Bobbejaanland</p>
-                        <p>Acteur in verschillende rollen en shows. Verantwoordelijk voor entertainment, karakterbewustzijn en publieksinteractie.</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Arbeider</h3>
-                        <p class="timeline-date">Sep 2025</p>
-                        <p>TI Automotive, Paal</p>
-                        <p>Klaarmaken van leidingclips in een mal voor verdere verwerking.</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Leverancier</h3>
-                        <p class="timeline-date">Jul 2024 - Sep 2024</p>
-                        <p>Belmédis, Tessenderlo</p>
-                        <p>Levering van medicijnen aan apotheken.</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Logistiek Medewerker</h3>
-                        <p class="timeline-date">Jun 2023 - Okt 2023</p>
-                        <p>Stanley Black en Decker, Tessenderlo</p>
-                        <p>Dozen opvullen, palleten wikkelen, dozen scannen op juiste pallet.</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Logistiek Medewerker</h3>
-                        <p class="timeline-date">Jun 2022 - Sep 2022</p>
-                        <p>Nike, Ham</p>
-                        <p>Trailers inladen, palleten klaarmaken, afdeling proper houden.</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Winkelmedewerker</h3>
-                        <p class="timeline-date">Nov 2021 - Heden</p>
-                        <p>Spar, Dienst</p>
-                        <p>Kassa, spiegelen, poetsing.</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Operator</h3>
-                        <p class="timeline-date">Jun 2021 - Nov 2022</p>
-                        <p>H8, Bobbejaanland</p>
-                        <p>Mensenaanspreken om een evenwichtig spel te spelen, alles opruimen op het einde van de dag, geld verzamelen van die dag.</p>
+            <!-- Intro -->
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <div class="ervaring-intro">
+                        <p>Tijdens mijn studie programmeren heb ik ervaring opgebouwd met diverse programmeertalen en technologieën, waaronder C++, OpenGL, SDL, JavaScript, C#, HTML, CSS en SQL. Deze kennis stel ik in de praktijk in voor het ontwikkelen van gebruiksvriendelijke applicaties en websites, waarbij ik technische uitdagingen graag creatief en efficiënt aanpak.</p>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Onderwijs -->
-        <div class="timeline-section">
-            <h2>Onderwijs</h2>
-            
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Graduaat Programmeren</h3>
-                        <p class="timeline-date">Sep 2025 - Heden</p>
-                        <p>Thomas More, Geel</p>
-                        <p>Verdieping in programmeren,IT-technologie.</p>
+            <!-- PROJECTEN -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h2 class="mb-4 fw-bold">Projecten</h2>
+                    
+                    <div class="project-card">
+                        <div class="row g-4">
+                            <div class="col-md-5">
+                                <img src="img/Project1Screen.jpg" alt="Tower Defense Game screenshot" class="img-fluid rounded">
+                            </div>
+                            <div class="col-md-7">
+                                <h3 class="mb-2">Tower Defense Game</h3>
+                                <p class="project-type mb-2">GamePlayScripting Project</p>
+                                <p>Een strategische, wave-based tower defense game met meerdere vijandtypen, upgrade-mechanieken, bossfights en een gebruiksvriendelijke GUI met een health indicator voor de toren. In dit project heb ik de kernsystemen zoals vijandlogica, gameplay, animaties en upgrades volledig geïmplementeerd.</p>
+                                <a href="https://github.com/xandermeyen/DAE-Tower_Defence/releases/tag/v1.2.0" class="btn btn-accent btn-sm" target="_blank">Bekijk op GitHub →</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Game Development</h3>
-                        <p class="timeline-date">Sep 2024 - August 2025</p>
-                        <p>Howest, Kortrijk</p>
-                        <p>Verdieping in programmeren, game development en IT-technologie.</p>
+            </div>
+
+            <!-- SKILLS -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h2 class="mb-4 fw-bold">Vaardigheden</h2>
+                    
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="skill-category">
+                                <h5 class="mb-3">Programmeertalen</h5>
+                                <ul class="list-unstyled">
+                                    <li>✓ C++</li>
+                                    <li>✓ C#</li>
+                                    <li>✓ JavaScript</li>
+                                    <li>✓ HTML & CSS</li>
+                                    <li>✓ SQL</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="skill-category">
+                                <h5 class="mb-3">Game Development</h5>
+                                <ul class="list-unstyled">
+                                    <li>✓ OpenGL</li>
+                                    <li>✓ SDL</li>
+                                    <li>✓ Game Design</li>
+                                    <li>✓ Gameplay Systems</li>
+                                    <li>✓ GUI Development</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="skill-category">
+                                <h5 class="mb-3">Overige Skills</h5>
+                                <ul class="list-unstyled">
+                                    <li>✓ Web Development</li>
+                                    <li>✓ Database Design</li>
+                                    <li>✓ Problem Solving</li>
+                                    <li>✓ Team Collaboration</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Algemeen</h3>
-                        <p class="timeline-date">Sep 2023 - Jun 2024</p>
-                        <p>Sint-Jozef Geel, Geel</p>
+            <!-- WERKERVARING -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h2 class="mb-4 fw-bold">Werkervaring</h2>
+                    
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h5>Scare Actor</h5>
+                                <p class="timeline-date mb-2">2024 - Heden</p>
+                                <p class="text-muted mb-2">Bobbejaanland</p>
+                                <p>Acteur in verschillende rollen en shows. Verantwoordelijk voor entertainment, karakterbewustzijn en publieksinteractie.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h5>Arbeider</h5>
+                                <p class="timeline-date mb-2">Sep 2025</p>
+                                <p class="text-muted mb-2">TI Automotive, Paal</p>
+                                <p>Klaarmaken van leidingclips in een mal voor verdere verwerking.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h5>Leverancier</h5>
+                                <p class="timeline-date mb-2">Jul 2024 - Sep 2024</p>
+                                <p class="text-muted mb-2">Belmédis, Tessenderlo</p>
+                                <p>Levering van medicijnen aan apotheken.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h5>Logistiek Medewerker</h5>
+                                <p class="timeline-date mb-2">Jun 2023 - Okt 2023</p>
+                                <p class="text-muted mb-2">Stanley Black & Decker, Tessenderlo</p>
+                                <p>Dozen opvullen, palleten wikkelen, dozen scannen op juiste pallet.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h5>Logistiek Medewerker</h5>
+                                <p class="timeline-date mb-2">Jun 2022 - Sep 2022</p>
+                                <p class="text-muted mb-2">Nike, Ham</p>
+                                <p>Trailers inladen, palleten klaarmaken, afdeling proper houden.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h5>Winkelmedewerker</h5>
+                                <p class="timeline-date mb-2">Nov 2021 - Heden</p>
+                                <p class="text-muted mb-2">Spar, Dienst</p>
+                                <p>Kassa, spiegelen, poetsing.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h5>Operator</h5>
+                                <p class="timeline-date mb-2">Jun 2021 - Nov 2022</p>
+                                <p class="text-muted mb-2">H8, Bobbejaanland</p>
+                                <p>Mensenaanspreken om een evenwichtig spel te spelen, alles opruimen op het einde van de dag, geld verzamelen van die dag.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Kantoor</h3>
-                        <p class="timeline-date">Sep 2021 - Jun 2023</p>
-                        <p>Sint-Maria Geel, Geel</p>
+            <!-- ONDERWIJS -->
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="mb-4 fw-bold">Onderwijs</h2>
+                    
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h5>Graduaat Programmeren</h5>
+                                <p class="timeline-date mb-2">Sep 2025 - Heden</p>
+                                <p class="text-muted mb-2">Thomas More, Geel</p>
+                                <p>Verdieping in programmeren, IT-technologie.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h5>Game Development</h5>
+                                <p class="timeline-date mb-2">Sep 2024 - August 2025</p>
+                                <p class="text-muted mb-2">Howest, Kortrijk</p>
+                                <p>Verdieping in programmeren, game development en IT-technologie.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h5>Algemeen</h5>
+                                <p class="timeline-date mb-2">Sep 2023 - Jun 2024</p>
+                                <p class="text-muted mb-2">Sint-Jozef Geel, Geel</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h5>Kantoor</h5>
+                                <p class="timeline-date mb-2">Sep 2021 - Jun 2023</p>
+                                <p class="text-muted mb-2">Sint-Maria Geel, Geel</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-section bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h5 class="mb-3">Xander Meyen</h5>
+                    <p>&copy; 2025 Xander Meyen. Alle rechten voorbehouden.</p>
+                </div>
+                <div class="col-md-6">
+                    <h5 class="mb-3">Volg mij</h5>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/xander-meyen-683845220" target="_blank" class="text-light me-3">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="mailto:xander.meyen@gmail.com" class="text-light">
+                            <i class="fas fa-envelope"></i> Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

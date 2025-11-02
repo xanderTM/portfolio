@@ -8,34 +8,167 @@
     <meta name="author" content="Xander Meyen">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Xander Meyen</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Swiper CSS -->
+    <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
 <body>
-    <nav id="main-navigation">
-        <div class="logo">Xander Meyen</div>
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="cv.html">CV</a>
-            <a href="hobby.html">Hobby</a>
-            <a href="ervaring.html">Ervaring</a>
-            <a href="contact.html">Contact</a>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand fw-bold" href="index.html">Xander Meyen</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="cv.html">CV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hobby.html">Hobby</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ervaring.html">Ervaring</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <div class="cv-container">
-        <div class="cv-header">
-            <h1>Mijn CV</h1>
-        </div>
+    <!-- CV SECTION -->
+    <section class="cv-section py-5">
+        <div class="container">
+            <h1 class="text-center mb-5 fw-bold">Mijn CV</h1>
 
-        <img src="img/cvpage1.jpg" alt="CV Xander Meyen" class="cv-image">
-         <img src="img/cvpage2.jpg" alt="CV Xander Meyen" class="cv-image">
+            <!-- CV Images -->
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <img src="img/cvpage1.jpg" alt="CV Xander Meyen pagina 1" class="cv-image w-100">
+                    <img src="img/cvpage2.jpg" alt="CV Xander Meyen pagina 2" class="cv-image w-100">
+                </div>
+            </div>
 
-        <div class="cv-buttons">
-            <a href="cv2025.pdf" download class="cv-button">📥 Download CV</a>
+            <!-- Download Button -->
+            <div class="row mb-5">
+                <div class="col-md-6 mx-auto text-center">
+                    <a href="cv2025.pdf" download class="btn btn-accent btn-lg">
+                        📥 Download CV
+                    </a>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center mb-4 fw-bold">Mijn Skills</h2>
+                    <p class="text-center text-muted mb-5">Scroll door mijn technische vaardigheden en tools</p>
+
+                    <!-- Swiper Carousel -->
+                    <div class="swiper-container">
+                        <div class="swiper skillsSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="skill-card">
+                                        <img src="img/skills/htmlCss.png" alt="HTML & CSS" class="skill-img">
+                                        <h5 class="skill-title">HTML & CSS</h5>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="skill-card">
+                                        <img src="img/skills/js.png" alt="JavaScript" class="skill-img">
+                                        <h5 class="skill-title">JavaScript</h5>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="skill-card">
+                                        <img src="img/skills/cSharp.png" alt="C#" class="skill-img">
+                                        <h5 class="skill-title">C#</h5>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="skill-card">
+                                        <img src="img/skills/cpp.png" alt="C++" class="skill-img">
+                                        <h5 class="skill-title">C++</h5>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="skill-card">
+                                        <img src="img/skills/sql.png" alt="SQL" class="skill-img">
+                                        <h5 class="skill-title">SQL</h5>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="skill-card">
+                                        <img src="img/skills/bootstrap.png" alt="Bootstrap" class="skill-img">
+                                        <h5 class="skill-title">Bootstrap</h5>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="skill-card">
+                                        <img src="img/skills/git.png" alt="Git" class="skill-img">
+                                        <h5 class="skill-title">Git</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Navigation buttons -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+
+                            <!-- Pagination -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-section bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h5 class="mb-3">Xander Meyen</h5>
+                    <p>&copy; 2025 Xander Meyen. Alle rechten voorbehouden.</p>
+                </div>
+                <div class="col-md-6">
+                    <h5 class="mb-3">Volg mij</h5>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/xander-meyen-683845220" target="_blank" class="text-light me-3">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="mailto:xander.meyen@gmail.com" class="text-light">
+                            <i class="fas fa-envelope"></i> Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Custom Scripts -->
+    <script src="js/skills-carousel.js"></script>
 </body>
 
 </html>
